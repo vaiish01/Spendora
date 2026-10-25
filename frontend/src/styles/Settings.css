@@ -1,0 +1,73 @@
+
+.settings-layout {
+  display: grid;
+  gap: 20px;
+  max-width: 900px;
+}
+
+.setting-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 21px 0;
+  border-bottom: 1px solid #f0ede5;
+}
+
+.setting-row:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.setting-row > div {
+  min-width: 0;
+}
+
+.setting-row strong {
+  color: #303830;
+  font-size: 13px;
+}
+
+.setting-row p {
+  margin: 7px 0 0;
+  color: #858579;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.setting-row select {
+  width: auto;
+  max-width: 220px;
+}
+
+.soft-tag {
+  flex-shrink: 0;
+  padding: 7px 10px;
+  border-radius: 20px;
+  background: #e7f1e8;
+  color: #347352;
+  font-size: 11px;
+}
+
+.danger-panel {
+  border-color: #f0ded9;
+}
+
+.reset-description {
+  margin: -5px 0 20px;
+  color: #77796f;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+  .setting-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .setting-row select {
+    width: 100%;
+    max-width: none;
+  }
+}

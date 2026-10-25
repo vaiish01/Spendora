@@ -1,0 +1,169 @@
+
+.transactions-heading {
+  align-items: flex-start;
+}
+
+.table-tools {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 10px;
+  min-width: 0;
+  padding: 0 13px;
+  border: 1px solid #e7e3d9;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.search-box > span {
+  color: #858579;
+  font-size: 21px;
+}
+
+.search-box input {
+  width: 100%;
+  min-width: 0;
+  padding: 12px 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: #29332c;
+  font: inherit;
+  font-size: 12px;
+}
+
+.table-tools select {
+  max-width: 190px;
+}
+
+.transaction-list {
+  display: grid;
+}
+
+.transaction-row {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-width: 0;
+  padding: 15px 0;
+  border-bottom: 1px solid #f0ede5;
+}
+
+.transaction-row:last-child {
+  border-bottom: 0;
+}
+
+.transaction-icon {
+  display: grid;
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border-radius: 12px;
+  font-size: 17px;
+}
+
+.transaction-icon.income {
+  color: #347352;
+  background: #e4f0e6;
+}
+
+.transaction-icon.expense {
+  color: #b05d50;
+  background: #f8e8e4;
+}
+
+.transaction-description {
+  display: grid;
+  flex: 1;
+  gap: 5px;
+  min-width: 0;
+}
+
+.transaction-description strong {
+  overflow: hidden;
+  color: #303830;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.transaction-description span {
+  color: #89897e;
+  font-size: 10px;
+}
+
+.transaction-description i {
+  padding: 0 3px;
+  font-style: normal;
+}
+
+.transaction-amount {
+  flex-shrink: 0;
+  font-size: 12px;
+}
+
+.transaction-amount.income {
+  color: #347352;
+}
+
+.transaction-amount.expense {
+  color: #424940;
+}
+
+.transaction-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.icon-button {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: #6d746a;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  background: #f1eee7;
+}
+
+.danger-text {
+  color: #bd5c52;
+}
+
+@media (max-width: 650px) {
+  .transactions-heading,
+  .table-tools {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .table-tools select {
+    max-width: none;
+    width: 100%;
+  }
+
+  .transaction-row {
+    gap: 8px;
+  }
+
+  .transaction-actions {
+    flex-direction: column;
+  }
+
+  .transaction-amount {
+    font-size: 11px;
+  }
+}
