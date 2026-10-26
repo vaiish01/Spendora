@@ -48,7 +48,6 @@ export default function Dashboard({
           </span>
         </div>
 
-        <span className="hero-decoration">s.</span>
       </section>
 
       <section className="summary-grid">
