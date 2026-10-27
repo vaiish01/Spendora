@@ -10,8 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/settings")
-@CrossOrigin(origins = "http://localhost:5175")
-public class SettingsController {
+@CrossOrigin(
+    origins = {
+        "http://localhost:5173",
+        "http://localhost:5175"
+    }
+)public class SettingsController {
 
     private final SettingsService service;
 

@@ -19,7 +19,12 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/api/budgets")
-@CrossOrigin(origins = "http://localhost:5175")
+@CrossOrigin(
+    origins = {
+        "http://localhost:5173",
+        "http://localhost:5175"
+    }
+)
 public class BudgetController {
 
     private final BudgetService service;

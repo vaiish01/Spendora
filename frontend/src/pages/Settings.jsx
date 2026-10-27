@@ -184,16 +184,7 @@ useEffect(() => {
           />
         </div>
 
-        <div className="setting-row">
-          <div>
-            <strong>Settings storage</strong>
-            <p>Your preferences are saved to the backend database.</p>
-          </div>
-
-          <span className="soft-tag">
-            {saving ? "Saving..." : "Connected"}
-          </span>
-        </div>
+       
       </div>
     </section>
   );

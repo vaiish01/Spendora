@@ -19,8 +19,12 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/api/goals")
-@CrossOrigin(origins = "http://localhost:5175")
-public class GoalController {
+@CrossOrigin(
+    origins = {
+        "http://localhost:5173",
+        "http://localhost:5175"
+    }
+)public class GoalController {
 
     private final GoalService service;
 
